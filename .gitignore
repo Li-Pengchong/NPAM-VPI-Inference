@@ -1,0 +1,5 @@
+weights/*.pth
+outputs/
+__pycache__/
+*.py[cod]
+.DS_Store
