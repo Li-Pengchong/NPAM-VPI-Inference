@@ -47,19 +47,3 @@ python infer.py \
 The output contains five fold scores and their arithmetic mean. The ensemble score is not a calibrated probability. The fixed score cutoff of 0.5 reproduces the threshold used for threshold-based reporting in the accompanying study; it is not validated for clinical decision-making outside that study cohort.
 
 Small numeric differences may occur between CPU and GPU inference or across software builds.
-
-## Intended use and limitations
-
-This software is provided for research and reproducibility purposes only. It is not a medical device and must not be used as the sole basis for diagnosis or treatment. The published study evaluated manually reviewed nodule and pleural-region masks; performance with unreviewed automatic masks has not been established. External validation is required before use in other institutions or populations.
-
-## Data availability
-
-Patient-level imaging data are not included because of privacy and institutional restrictions. The example input must be distributed only if its release is permitted by the applicable ethics approval and institutional policy.
-
-## Citation
-
-Please cite the associated article after publication. **[Add final citation and DOI.]**
-
-## License
-
-**[Select and add the final code and model-weight licenses before public release.]**
