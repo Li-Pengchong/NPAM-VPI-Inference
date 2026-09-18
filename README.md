@@ -34,14 +34,14 @@ Download all five fold weights from the repository's release page and place them
 
 After downloading, the files can be verified against [`WEIGHTS_SHA256SUMS.txt`](WEIGHTS_SHA256SUMS.txt).
 
-## Example
+## Usage
 
 ```bash
 python infer.py \
-  --input examples/example_input.npy \
+  --input /path/to/three_channel_input.npy \
   --weights-dir weights \
   --device cuda \
-  --output outputs/example_result.json
+  --output outputs/result.json
 ```
 
 The output contains five fold scores and their arithmetic mean. The ensemble score is not a calibrated probability. The fixed score cutoff of 0.5 reproduces the threshold used for threshold-based reporting in the accompanying study; it is not validated for clinical decision-making outside that study cohort.
